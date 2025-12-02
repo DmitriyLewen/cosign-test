@@ -31,6 +31,6 @@ jobs:
         uses: goreleaser/goreleaser-action@e435ccd777264be153ace6237001ef4d979d3a7a # v6.4.0
         with:
           version: v2.1.0
-          args: release -f="goreleaser.yaml" "--clean --timeout 90m"
+          args: release -f="goreleaser.yaml" --clean --timeout 90m
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
