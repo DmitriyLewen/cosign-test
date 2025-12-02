@@ -33,4 +33,4 @@ jobs:
           version: v2.1.0
           args: release -f="goreleaser.yaml" --clean --timeout 90m
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ORG_REPO_TOKEN }}
